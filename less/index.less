@@ -63,11 +63,29 @@ html, body {
 /*margin for the whole page*/
 
 //mix-ins
-.display-format(){
+.display-row-format(){
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
+.display-column-format(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.title-format{ 
+	font-size: @title-font-size;
+		margin:1rem;
+		text-align: center;
+		width: auto;
+		background-color: rgba(158, 214, 94, 0.87);
+	}
+
+//variables
+@mid-font-size: 2rem;
+@small-font-size: 1rem;
+@title-font-size: 1.2rem;
+
 body{
 	font-size: 62.5%;
 	margin: 1rem;
@@ -83,7 +101,7 @@ h1, h2, h3, h4{
 }
 // styling the header
 header{
-	.display-format();
+	.display-row-format();
 	padding: 2rem 0;
 	.my-resume{
 		font-family: 'ZCOOL QingKe HuangYou', cursive;
@@ -95,18 +113,24 @@ header{
 	.links{
 		width: 70%;
 		font-size: 1rem;
-		.display-format();
+		.display-row-format();
+		
 		padding-top:1rem;
 		a{
 			font-family: 'Merriweather', serif;
 			text-decoration: none;
 			font-weight: bold;
 
+			&:visited {
+				color: green;
+			}//close visited of a
+
 			&:hover {
 				color: rgb(182, 83, 17);
 				transition:0.3s;
+			}//close hover of a
 
-			}//close hover for a
+			
 		}//close a
 
 	}//close the .links
@@ -115,11 +139,54 @@ header{
 
 // styling for the "self" section
 .self{
+	
 	.image{
 		width:40%;
+		margin:2rem;
 		transform: rotate(90deg);
-	}
-}
+	}//close for image
+
+	.about-me{
+		padding:2rem 4.5rem;
+		font-size: @small-font-size;
+	}//close for "about-me"
+}//close for self
+
+// Styling for skills
+.link-elements{
+	h4{
+
+		.title-format();
+	}//close h4
+
+	ul{
+		.display-row-format();
+		font-size: @small-font-size;
+		margin: 1rem;
+	}//close ul
+
+}//close .link-elements
+
+//styling for projects
+.projects{
+	h2{
+		.title-format();
+	
+	}//close h4
+	p{
+		font-size: @small-font-size;
+		margin: 1rem;
+	}//close for p
+	ul{
+		.display-column-format();
+		margin: 1rem;
+		
+		li{
+			font-size: @small-font-size;
+		}//close for li
+		
+	}//close for ul
+}//close project
 
 
 

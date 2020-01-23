@@ -158,6 +158,13 @@ body {
   src: local('ZCOOL QingKe HuangYou Regular'), local('ZCOOLQingKeHuangYou-Regular'), url(https://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mR4jPe4.ttf) format('truetype');
 }
 /*margin for the whole page*/
+.title-format {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
 body {
   font-size: 62.5%;
   margin: 1rem;
@@ -174,8 +181,7 @@ h4 {
 }
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 2rem 0;
 }
 header .my-resume {
@@ -188,8 +194,7 @@ header .links {
   width: 70%;
   font-size: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 1rem;
 }
 header .links a {
@@ -197,11 +202,52 @@ header .links a {
   text-decoration: none;
   font-weight: bold;
 }
+header .links a:visited {
+  color: green;
+}
 header .links a:hover {
   color: #b65311;
   transition: 0.3s;
 }
 .self .image {
   width: 40%;
+  margin: 2rem;
   transform: rotate(90deg);
+}
+.self .about-me {
+  padding: 2rem 4.5rem;
+  font-size: 1rem;
+}
+.link-elements h4 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+.link-elements ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.projects h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+.projects p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+.projects ul li {
+  font-size: 1rem;
 }
