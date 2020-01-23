@@ -179,16 +179,17 @@ h3,
 h4 {
   font-family: 'Oswald', sans-serif;
 }
-header {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem 0;
-}
 header .my-resume {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
-  width: 20%;
   font-size: 2rem;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .my-resume h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
 }
 header .links {
   width: 70%;
@@ -196,6 +197,15 @@ header .links {
   display: flex;
   justify-content: space-evenly;
   padding-top: 1rem;
+}
+@media (max-width: 500px) {
+  header .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  }
 }
 header .links a {
   font-family: 'Merriweather', serif;
@@ -209,10 +219,21 @@ header .links a:hover {
   color: #b65311;
   transition: 0.3s;
 }
+@media (max-width: 500px) {
+  .self {
+    text-align: center;
+  }
+}
 .self .image {
-  width: 40%;
-  margin: 2rem;
+  width: 300px;
+  padding: 2.5rem;
   transform: rotate(90deg);
+}
+@media (max-width: 500px) {
+  .self .image {
+    align-content: center;
+    width: 300px;
+  }
 }
 .self .about-me {
   padding: 2rem 4.5rem;
