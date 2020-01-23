@@ -57,3 +57,72 @@ html, body {
     height: 100%;
 }
 
+/*my codes start here*/
+/*font style from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway|ZCOOL+QingKe+HuangYou&display=swap');
+/*margin for the whole page*/
+
+//mix-ins
+.display-format(){
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+body{
+	font-size: 62.5%;
+	margin: 1rem;
+	font-family: 'Raleway', sans-serif;
+	border: 1px solid black;
+	letter-spacing: 1px;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Oswald', sans-serif;
+	
+}
+// styling the header
+header{
+	.display-format();
+	padding: 2rem 0;
+	.my-resume{
+		font-family: 'ZCOOL QingKe HuangYou', cursive;
+		width: 20%;
+		font-size: 2rem;
+		align-items: center;
+	}//close the .my-resume
+
+	.links{
+		width: 70%;
+		font-size: 1rem;
+		.display-format();
+		padding-top:1rem;
+		a{
+			font-family: 'Merriweather', serif;
+			text-decoration: none;
+			font-weight: bold;
+
+			&:hover {
+				color: rgb(182, 83, 17);
+				transition:0.3s;
+
+			}//close hover for a
+		}//close a
+
+	}//close the .links
+
+}//close the header
+
+// styling for the "self" section
+.self{
+	.image{
+		width:40%;
+		transform: rotate(90deg);
+	}
+}
+
+
+
+
+
+
