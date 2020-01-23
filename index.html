@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- the 'viewport' for desktop, tablet, and phone view vision -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +16,70 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!--nav bars part-->
+  <header>
+    <div class="my-resume">
+      <h1>My Resume</h1>
+    </div><!--close for "my-resume"-->
+    <div class="links">
+        <a id="home" href="#">Home</a>
+        <a id="skill" href="#">Skills</a>
+        <a id="projects" href="">Projects</a>
+        <a id="work-history" href="#">Work History</a>
+        <a id="contact" href="">Contact</a>
+    </div><!--close for "links"-->
+  </header>
+
+  <!--middle1 part-->
+<div class="self">
+    <img class="image" src="images/nikki-redwood.jpg" alt="Nikki photo in Redwwod">
+    <div class="about-me">
+      <h2 class="name">Xue Ying(Nikki) Lin</h2>
+      <p>Passion & Driven</p>
+      <p>Technology brings the world together.</p>
+      <p>Nothing is impossible & Time is matter.</p>
+    </div><!--close for "about-me"-->
+</div> <!--close for "self"-->
+
+<!--link elements -->
+
+<div class="link-elements">
+  <h4>Skills</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>Java</li>
+    <li>C</li>
+  </ul><!--close ul-->
+</div> <!--close "link-elements" section-->
+
+<div class="projects">
+  <h2>Projects</h2>
+  <p>Please press the project's name to view codes.</p>
+  <ul>
+    <li><a href="https://XueYinglin.github.io">XueYinglin.github.io</a></li>
+    <li><a href="https://github.com/XueYingLin/responsive-web-design-I">Responsive-web-design-I</a></li>
+    <li><a href="https://github.com/XueYingLin/Nikki-wepage">Nikki-wepage</a></li>
+    <li><a href="https://github.com/XueYingLin/Sprint-Challenge--User-Interface">Sprint-Challenge--User-Interface</a></li>
+    <li><a href="https://github.com/XueYingLin/UI-III-Flexbox">UI-III-Flexbox</a></li>
+    <li><a href="https://github.com/XueYingLin/sweetEatsBakery">sweetEatsBakery</a></li>
+    <li><a href="https://github.com/XueYingLin/User-Interface">User-Interface</a></li>
+  </ul>
+</div> <!--close "project"-->
+
+    <!-- Contact part not done yet -->
+<div class="contact">
+  <h2>Contact</h2>
+  <p>phone #: (415)265-7978</p>
+  <p>Email: <a href="mailto:nikkiylin@gmail.com">nikkiylin@gmail.com</a></p>
+  <p>github:<a href="https://github.com/XueYingLin">https://github.com/XueYingLin</a></p>
+
+</div> <!--close "contact"-->
+
+<footer>
+    <p>Copyright 2020</p>
+  </footer>
 </body>
 </html>

@@ -1,1 +1,289 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*my codes start here*/
+/*font style from google fonts*/
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ZCOOL QingKe HuangYou';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ZCOOL QingKe HuangYou Regular'), local('ZCOOLQingKeHuangYou-Regular'), url(https://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mR4jPe4.ttf) format('truetype');
+}
+/*margin for the whole page*/
+.title-format {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+body {
+  font-size: 62.5%;
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid black;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
+}
+header .my-resume {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 2rem;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .my-resume h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+header .links {
+  width: 70%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+@media (max-width: 500px) {
+  header .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  }
+}
+header .links a {
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .links a:visited {
+  color: green;
+}
+header .links a:hover {
+  color: #b65311;
+  transition: 0.3s;
+}
+@media (max-width: 500px) {
+  .self {
+    text-align: center;
+  }
+}
+.self .image {
+  width: 300px;
+  padding: 2.5rem;
+  transform: rotate(90deg);
+}
+@media (max-width: 500px) {
+  .self .image {
+    align-content: center;
+    width: 300px;
+  }
+}
+.self .about-me {
+  padding: 2rem 4.5rem;
+  font-size: 1rem;
+}
+.link-elements h4 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+.link-elements ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.projects h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+.projects p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+.projects ul li {
+  font-size: 1rem;
+}
+.contact h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: center;
+  width: auto;
+  background-color: rgba(158, 214, 94, 0.87);
+}
+.contact p {
+  font-size: 1rem;
+  margin: 1rem;
+}
+footer p {
+  text-align: center;
+  font-size: 1rem;
+}
